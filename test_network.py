@@ -1,3 +1,4 @@
+# To check output , Open command prompt point to your current directory and give below command
 ##python test_network.py --model M:\pythonD\DogCat\CatDog.model --image M:\pythonD\DogCat\dog.jpg
 ##python test_network.py --model M:\pythonD\DogCat\CatDog.model --image M:\pythonD\DogCat\cat.jpg
 # import the necessary packages
@@ -51,15 +52,6 @@ except Exception as e:
 print("[INFO] loading network...")
 model = load_model(args["model"])
 
-# classify the input image
-# Creating Probability Tuples
-##prob = []
-##for i in range(0,totClass):
-##    values = str(i) + 'x'
-##    prob.append(values)
-##prob = [zero, one,two,three,four,five,six]
-##    probTuple  = (zero, one,two,three,four,five,six)
-##probTuple = tuple(prob)
 (zero, one) = model.predict(image)[0]
 prob = [zero,one]
 maxProb = max(prob)
