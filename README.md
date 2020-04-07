@@ -10,4 +10,4 @@ Train :
 python train_network.py --dataset M:/pythonD/DogCat/CatDog --model CatDog.model
 
 Test :
-python train_network.py --dataset M:/pythonD/DogCat/CatDog --model CatDog.model
+python test_network.py --model M:\pythonD\DogCat\CatDog.model --image M:\pythonD\DogCat\cat.jpg
